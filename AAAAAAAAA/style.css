@@ -1,6 +1,8 @@
 .hding {
     color: rgb(253, 0, 0);
     font-size: larger;
+    background-color: rgb(245, 255, 99);
+   
 }
 
 .main-heading {
@@ -45,4 +47,38 @@ footer h5 {
 .btnclick:hover {
     background-color: rgb(255, 238, 0);
     color: rgb(66, 2, 10);
+}
+
+.sidelist {
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.sidelist a:hover {
+    background-color: aliceblue;
+    color: red;
+}
+
+.sidebardisp {
+    display: flex;
+}
+.inffo{
+    color: rgb(255, 0, 0);
+}
+
+.sidelist a:active {
+    background-color: aliceblue;
+    color: red;
+}
+
+.maindata {
+    width: 600px;
+    display: flexbox;
+}
+.bluee{
+    color: blue;
+}
+.faq{
+    color: darkgreen;
+    font-size:xx-large;
 }

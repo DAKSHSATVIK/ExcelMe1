@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Early-prep : Start Preparing Now!(Get aid for exams like ESE,GATE,PSU's,SSC JE etc.)</title>
+    <link rel="icon" href="Image/favicon-32x32.png" type="image/gif" sizes="32*32">
+    <style>
+        #extra {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            #extra {
+                display: block;
+                /* background-color: turquoise; */
+            }
+        }
+
+
+
+        .main {
+            background-color: rgb(58, 51, 165);
+            color: white;
+            font-size: 16px;
+        }
+
+        /* tr:nth-child(odd) {
+    background-color: lightblue;
+} */
+
+        /* 
+tr:nth-child(even) {
+    background-color: rgb(133, 108, 105);
+} */
+        tr.new:nth-child(odd):hover {
+            background-color: darkorange;
+            color: whitesmoke;
+            transform: scale(1.009);
+            transition: transform 0.3s ease-in;
+        }
+
+        tr.new:nth-child(even):hover {
+            background-color: rgb(255, 251, 0);
+            color: rgb(3, 3, 0);
+            transform: scale(1.009);
+            transition: transform 0.3s ease-in;
+        }
+
+        .bhkk {
+            background-color: red;
+            font-size: 16px;
+            color: yellow;
+        }
+
+        .new {
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ExcelMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Exams.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Jobs<span
+                                class="badge rounded-pill bg-danger">New</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Exams
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="gate.html">GATE</a></li>
+                            <li><a class="dropdown-item" href="esepage.html">ESE (IES)</a></li>
+                            <li><a class="dropdown-item" href="DRDO.html">DRDO</a></li>
+                            <li><a class="dropdown-item" href="isro.html">ISRO</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="otherexam.html">Other Govt. Exams</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Prepration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Online</a></li>
+                            <li><a class="dropdown-item" href="#">Offline</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Sibebar and main data -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav id="sidebarMenu sidebardisp" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item sidelist">
+                            <a class="nav-link " aria-current="page" href="DRDO.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg> About DRDO
+                            </a>
+                        </li>
+                        <i class="fas fa-question-circle"></i>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="DRDOSYL.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg> Syllabus
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="gatemusthbook.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-cart">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg> Must have Books
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="drdocutoff.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bar-chart-2">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg> Cutoff
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="gatemvsr.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg> Marks v/s Rank
+                            </a>
+                        </li>
+
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="drdoprev.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-layers">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg> Previous Year papers
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                        <h1 class="h2">DRDO</h1>
+                    </div>
+
+                    <!-- main data -->
+                    <h4><b class="hding">What's DRDO ?</b></h4><br>
+                    <strong> DRDO <b style="color: rgb(228, 0, 152);">Defense Research & Development Organization
+                        </b>was
+                        formed in 1958 and it had only around 10 laboratories. But now, DRDO has come a long way to
+                        have more than 50 laboratories under its umbrella. If you are an engineer passionate about the
+                        subject
+                        and curious about research and development then DRDO offers you with one of a kind opportunity
+                        to
+                        serve
+                        the country. Aspiring candidates can take up the DRDO 2021 Recruitment Examination and get the
+                        opportunity to become a scientist developing products that will be helpful for the nation's
+                        defense
+                        system.</strong><br><br>
+                    <h4><b class="hding">What's DRDO Exam ?</b></h4><br>
+                    <strong>It is a National Level Entrance Examination conducted by the Defence Research and
+                        Development
+                        Organization of the Ministry of Defence for the position of Junior Research Fellows.
+                        <br><br>
+
+                        DRDO dedicatedly works towards enhancing self-reliance in Defence Systems and undertakes design
+                        &
+                        development leading to the production of world-class weapon systems and equipment per the
+                        expressed
+                        needs and the qualitative requirements laid down by the three services.
+                        <br><br></strong>
+
+                    <b class="bluee">The following candidates are eligible to appear in DRDO 2021 examination :</b>
+                    <br><br>
+                    <b class="impred"> Nationality:</b>
+                    Candidate must be a citizen of India. <br><br>
+                    <b class="impred"> Age Limit:</b>
+                    <b class="imporange">Upper Age Limit:</b> Candidates more than 28 years of age(as of 31st May 2021)
+                    are not eligible for DRDO
+                    2021 exam.<br>
+
+                    <b class="impgreen"> Age limit Relaxation:-</b><br><br>
+
+                    <b class="imppink"> SC/ST candidates:</b> Not exceeding 33 years (5 years of Relaxation). For
+                    Scientist 'B' Post<br>
+
+                    <b class="imppink"> OBC (non-creamy layer):</b> Not exceeding 31 years (3 years of Relaxation). For
+                    Scientist 'B' Post<br><br>
+
+                    For every other post, age limit relaxation is reserved as per the rules in vogue.
+                    Age is also relaxable for Armed Forces Personnel candidates as per rules in the vogue.
+                    <br><br>
+                    <b class="inffo">Minimum marks required to appear : </b>DRDO 2021 Eligibility based on Qualification
+                    Candidates should have a first-class bachelor degree in engineering Or technology from a recognized
+                    university or institute or equivalent and valid GATE 2017/2018/2019 score.<br><br>
+                    <h4><b class="hding">Subjects : </b></h4><br>
+                    <div class="container">
+                        <table style="margin-left: auto; margin-right: auto;" class="drdotab table image_resize_class">
+                            <!-- <caption>DRDO&nbsp;2021&nbsp; Eligibility - Scientist B</caption> -->
+                            <thead>
+                                <tr>
+                                    <th style="width: 178px;">Subject/Discipline</th>
+                                    <!-- <th style="width: 193px;">Essential Qualification</th> -->
+                                    <th style="width: 138.5px;">Corresponding GATE Paper (Code)</th>
+                                    <th style="width: 267.5px;">Equivalent acceptable subjects of Qualifying Degree</th>
+                                </tr>
+                            </thead>
+                            <tbody class="drdotabbody">
+                                <tr>
+                                    <td style="width: 178px;">Electronics and Communication Engineering</td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree in Engineering or
+                                    Technology in Electronics &amp; Communication Engineering from a recognized
+                                    university
+                                    or equivalent.</td> -->
+                                    <td style="width: 138.5px;">Electronics and Communication Engineering (EC)</td>
+                                    <td style="width: 267.5px;">
+                                        <ol>
+                                            <li>Electronics &amp; Communication Engineering</li>
+                                            <li>Electronics Engineering</li>
+                                            <li>Electronics &amp; Computer Engineering</li>
+                                            <li>Electronics &amp; Control Engineering.</li>
+                                            <li>Electronics &amp; Communication System Engineering</li>
+                                            <li>Electronics &amp; Instrumentation Engineering</li>
+                                            <li>Electronics &amp; Tele‐ Communication Engineering</li>
+                                            <li>Electronics &amp;Telematics Engineering</li>
+                                            <li>Industrial Electronics Engineering</li>
+                                            <li>TeleCommunicationEngineering</li>
+                                            <li>Telecommunication &amp; Information Tech</li>
+                                            <li>Applied Electronics &amp; Instrumentation Engineering</li>
+                                            <li>Electronics &amp; Electrical Communication Engineering.</li>
+                                            <li>Electrical with Communication Engineering</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 178px;">Computer Science and Engineering</td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree in Engineering or
+                                    Technology in Computer Science &amp; Engineering from a recognized university or
+                                    equivalent</td> -->
+                                    <td style="width: 138.5px;">Computer Science and information technology (CS)</td>
+                                    <td style="width: 267.5px;">
+                                        <ol>
+                                            <li>Computer Science Engineering/Technology</li>
+                                            <li>Computer Science/Engineering &amp; Info Tech</li>
+                                            <li>Computer Science &amp; System Engineering</li>
+                                            <li>Software Engineering/Technology</li>
+                                            <li>Computer Science &amp; Automation Engineering/Technology</li>
+                                            <li>Information Technology</li>
+                                            <li>Computer Science/Technology &amp; Informatics Eng</li>
+                                            <li>Information Science &amp; Engineering/Technology</li>
+                                            <li>Computer &amp; Communication Engineering</li>
+                                            <li>Computer Networking</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 178px;">Mechanical Engineering</td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree in Engineering or
+                                    Technology in Mechanical Engineering from a recognized university or equivalent.
+                                </td> -->
+                                    <td style="width: 138.5px;">Mechanical Engineering (ME)</td>
+                                    <td style="width: 267.5px;">
+                                        <ol>
+                                            <li>Mechanical Engineering</li>
+                                            <li>Mechatronics Engineering</li>
+                                            <li>Mechanical &amp; Automation Engineering</li>
+                                            <li>Mechanical &amp; Production Engineering</li>
+                                        </ol>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 178px;">Electrical Engineering/Electrical &amp;Electronics
+                                        Engineering
+                                    </td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree in Engineering or
+                                    Technology in Electrical Engineering from a recognized university or equivalent.
+                                </td> -->
+                                    <td style="width: 138.5px;">Electrical Engineering(EE)</td>
+                                    <td style="width: 267.5px;">1. Electrical Engineering<br>2. Electrical Power System
+                                        Engineering<br>3. Electrical &amp; Electronics Engineering<br>4. Electrical
+                                        &amp;
+                                        Renewable Energy Engineering<br>5. Power Engineering<br>6. Power Electronics
+                                        Engineering<br>7. Electronics &amp; Electrical Communications Engineering<br>8.
+                                        Electrical with Communication Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 178px;">Aeronautical<br>Engineering/Aerospace<br>Engineering</td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree<br>in Engineering or
+                                    Technology in<br>Aeronautical Engineering from a recognized<br>university or
+                                    equivalent.
+                                </td> -->
+                                    <td style="width: 138.5px;">Aerospace<br>Engineering (AE)</td>
+                                    <td style="width: 267.5px;">1. Aeronautical Engineering<br>2. Aerospace
+                                        Engineering<br>3.
+                                        Avionics Engineering</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 178px;">Chemical Engineering</td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree<br>in Engineering or
+                                    Technology in<br>Chemical Engineering from a recognized<br>university or equivalent.
+                                </td> -->
+                                    <td style="width: 138.5px;">Chemical<br>Engineering (CH)</td>
+                                    <td style="width: 267.5px;">1. Chemical Engineering<br>2. Chemical Technology<br>3.
+                                        Chemical
+                                        Plant Engineering<br>4. Applied Chemical &amp; Polymer Technology<br>5. Polymer
+                                        Science
+                                        &amp; Chemical Technology<br>6. Chemical Science &amp; Technology</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 178px;">Instrumentation<br>Engineering</td>
+                                    <!-- <td style="width: 193px;">At least First Class Bachelor’s Degree<br>in Engineering or
+                                    Technology in<br>Instrumentation Engineering from a<br>recognized university or
+                                    equivalent.</td> -->
+                                    <td style="width: 138.5px;">Instrumentation<br>Engineering (IN)</td>
+                                    <td style="width: 267.5px;">1. Instrumentation Engineering<br>2. Instrumentation
+                                        &amp;
+                                        Control Engineering<br>3. Electronics &amp; Instrumentation Engineering<br>4.
+                                        Electronic
+                                        Instrumentation &amp; Control Engineering<br>5. Applied Electronics and
+                                        Instrumentation
+                                        Engineering<br>6. Electrical and Instrumentation Engineering<br>7. Electrical
+                                        Instrumentation &amp; Control Engineering</td>
+                                </tr>
+                            </tbody>
+                        </table><br>
+                        <i class="impred">**The essential Qualification is same in all streams i.e.:-</i> At least First
+                        Class Bachelor’s Degree in
+                        Engineering orTechnology in Electronics &amp; Communication Engineering from a recognized
+                        university or equivalent.
+                    </div>
+
+
+
+                    <br><br><br>
+                    <div class="faq">
+                        <p class="faq">Frequently asked Questions - </p>
+                    </div><br><br>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Q: I am pursuing B.Sc. Am I eligible to appear in GATE 2021?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Ans: From 2021 session onwards, the authorities have
+                                    introduced various changes in GATE 2021. According to which, 3 year graduation is
+                                    also valid.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Q: I belong to OBC category and therefore want to upload my category certificate
+                                        but I can't find any option to upload the certificate. What to do?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Ans: It is because category certificate for the OBC
+                                        candidates is not needed while applying for GATE 2021. The category certificate
+                                        is used for the purpose of ascertaining the concession offered in the
+                                        application fee. The OBC certificate would be needed while taking admission
+                                        using GATE scores.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Q : Can I give Gate in 3<sup>rd</sup> year of B.tech?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Ans : Yes you can but most students take it as practice
+                                        as the whole syllabus of GATE is covered in 4<sup>th</sup> year of B.tech.F
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+            </main>
+        </div>
+    </div>
+    <div class="extra" id="extra">
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                    <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                    <div class=""></div>
+                </div>
+            </div>
+            <br><br>
+            <!-- main data  -->
+            <div class="container">
+                <h4><b class="hding">Exam Pattern</b></h4><br><br>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <td>
+                                <p><strong>Section</strong></p>
+                            </td>
+                            <td>
+                                <p><strong>Subjects</strong></p>
+                            </td>
+                            <td>
+                                <p><strong>Number of Questions</strong></p>
+                            </td>
+                            <td>
+                                <p><strong>Number of Marks</strong></p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p><span style="font-weight: 400;">Section I</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">Subject Knowledge Specific Questions</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">100</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">400</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">
+                                <p><span style="font-weight: 400;">Section II</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">Logical Relations</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">10</span></p>
+                            </td>
+                            <td rowspan="5">
+                                <p><span style="font-weight: 400;">100</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span style="font-weight: 400;">Spatial Reasoning</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">10</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span style="font-weight: 400;">Concept Formation</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">10</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span style="font-weight: 400;">Numerical Reasoning</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">10</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span style="font-weight: 400;">Abstract Reasoning</span></p>
+                            </td>
+                            <td>
+                                <p><span style="font-weight: 400;">10</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p><span style="font-weight: 400;">Total</span></p>
+                            </td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>
+                                <p><span style="font-weight: 400;">500</span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div><br><br>
+            <!-- syllabus -->
+            <h4><b class="hding">SYLLABUS</b></h4><br>
+            <h5 class="green">Syllabus for DRDO Scientist Grade 'B' : -</h5><br><br>
+            <iframe src="PDF/DRDO Scientist B.pdf" class="col-sm-12" width="100%" height="600px">
+            </iframe><br><br><br>
+            <!-- must have books -->
+            <h4><b class="hding">Importatnt Books</b></h4><br>
+            <table class="table table-hover border-top">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Subject</th>
+                    <th>Books</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+            </table>
+            <br><br>
+            <!-- Yearwise GATE Mechanical Engineering Cutoff -->
+            <div class="container">
+                <h3><b class="hding">The cut-off of the GATE scores from selection to interviews for
+                        each category is given below (based on last year, and tentative):</b></h3><br>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Category</th>
+                        <th>GATE Score</th>
+                    </tr>
+                    <tr>
+                        <td>General</td>
+                        <td>875</td>
+                    </tr>
+                    <tr>
+                        <td>OBC</td>
+                        <td>824</td>
+                    </tr>
+                    <tr>
+                        <td>SC</td>
+                        <td>705</td>
+                    </tr>
+                    <tr>
+                        <td>ST</td>
+                        <td>578</td>
+                    </tr>
+                </table><br><br>
+                <!-- GATE 2020 Marks v/s Rank -->
+
+                <br><br>
+                <!-- GATE Yearwise Question Paper -->
+                <h4><b class="hding">DRDO Yearwise Question Paper</b></h4><br><br>
+                <div class="container drdoqp shadow-lg p-3 mb-5 bg-body rounded"><b class="impblue"
+                        style="font-size:25px">
+                        Download DRDO Scientist B Previous Papers PDF @</b>
+                    <i class="imppink"
+                        style="font-size: 23px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        www.drdo.gov.in</i><br><br>
+                    For any exam preparation knowing Previous papers is an important task. So, candidates who want to
+                    crack job in DRDO must have to practice DRDO Scientist B Previous Papers on this page. By
+                    following provided DRDO Scientist B Previous Papers contenders can get a clear idea on their
+                    preparation of DRDO Scientist B Exam 2019. Also, applicants may develop their skills and
+                    knowledge of DRDO Scientist B Exam 2019 by following provided DRDO Scientist B Previous
+                    Papers.
+                    Practicing DRDO Scientist B Old papers will give you perfect analyzation of DRDO Scientist B Exam
+                    2019. By solving a lack of DRDO Previous Papers individuals can achieve more marks in DRDO
+                    Scientist B Exam 2019. Practicing DRDO Scientist B Previous Papers will help to improve
+                    confidence levels of preparation of DRDO Scientist B Exam 2019. Moreover, you can
+                    download DRDO Scientist B Syllabus along with DRDO Scientist B Exam Pattern 2019-20 PDF for
+                    free cost.
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer foot">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2 footimg" src="Image/logo footer.jpeg" alt="" width="100" height="100">
+                    <small class="d-block mb-3 text-muted">© 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary footlink" href="#">GATE</a></li>
+                        <li><a class="link-secondary footlink" href="#">ESE</a></li>
+                        <li><a class="link-secondary footlink" href="#">DRDO</a></li>
+                        <li><a class="link-secondary footlink" href="#">ISRO</a></li>
+                        <li><a class="link-secondary footlink" href="#">UPPSC AE</a></li>
+                        <li><a class="link-secondary footlink" href="#">SSC JE</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary footlink" href="#">Books</a></li>
+                        <li><a class="link-secondary footlink" href="#">Syllabus</a></li>
+                        <li><a class="link-secondary footlink" href="#">Coaching</a></li>
+                        <li><a class="link-secondary footlink" href="#">Topper's Talk</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Developers</h5>
+                    <ul class="list-unstyled text-small footul">
+                        <li><a class="link-secondary footlink" href="#">Satvik Srivastav</a></li>
+                        <li><a class="link-secondary footlink" href="#">Yuvraj Singh</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

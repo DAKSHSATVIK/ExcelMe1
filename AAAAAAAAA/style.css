@@ -100,4 +100,60 @@ footer h5 {
     font-family:Georgia, 'Times New Roman', Times, serif;
 
 }
+.impred{
+    color: red;
+    font-weight: bolder;
+}
+.impblue{
+    color: rgb(4, 4, 214);
+    font-weight: bolder;
+}
+.impgreen{
+    color: green;
+    font-weight: bolder;
+}
+.impyellow{
+    color: rgb(255, 230, 0);
+    font-weight: bolder;
+}
+.imppink{
+    color:rgb(255, 0, 140);
+    font-weight: bolder;
+}
+.imporange{
+    color: orange;
+    font-weight: bolder;
+}
+.impsky{
+    color: rgb(0, 153, 255);
+    font-weight: bolder;
+}
+.drdotab{
+    text-align: center;
+    border: 5px solid rgb(255, 187, 0)
 
+}
+.drdoqp{
+background-color: rgb(250, 93, 30);
+
+background-image: linear-gradient(to bottom right, rgb(60, 255, 0), yellow, rgb(60, 255, 0));
+border-radius: 25px;
+    
+word-wrap: break-word;
+}
+.brad{
+    font-family: cursive;
+    color: rgb(255, 238, 0);
+    font-style: unset;
+    font-size: 25px;
+  
+}
+.tcode{
+    font-family: 'Raleway', sans-serif;
+}
+/* sccje heading before table */
+.ssccuth{
+    color: rgb(233, 0, 144);
+    text-align: center;
+}
+/* set table in scree sscje */

@@ -7,301 +7,348 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <title>Early-prep :  Start Preparing Now!(Get aid for exams like ESE,GATE,PSU's,SSC JE etc.)</title>
+    <title>Early-prep : Start Preparing Now!(Get aid for exams like ESE,GATE,PSU's,SSC JE etc.)</title>
     <link rel="icon" href="Image/favicon-32x32.png" type="image/gif" sizes="32*32">
     <script>
         function myFunction() {
             location.replace("gate.html")
         }
+        function IES() {
+            location.replace("esepage.html")
+        }
+        function DRDO() {
+            location.replace("DRDO.html")
+        }
+        function SSC() {
+            location.replace("sscje.html")
+        }
 
     </script>
 </head>
 
-<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">ExcelMe</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Exams.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jobs.html">Jobs<span class="badge rounded-pill bg-danger">New</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="books.html">Books</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Exams
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="gate.html">GATE</a></li>
+                        <li><a class="dropdown-item" href="esepage.html">ESE (IES)</a></li>
+                        <li><a class="dropdown-item" href="DRDO.html">DRDO</a></li>
+                        <li><a class="dropdown-item" href="isro.html">ISRO</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="otherexam.html">Other Govt. Exams</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Prepration
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="online.html">Online</a></li>
+                        <li><a class="dropdown-item" href="offline.html">Offline</a></li>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">ExcelMe</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Exams.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Jobs<span class="badge rounded-pill bg-danger">New</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Books</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Exams
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="gate.html">GATE</a></li>
-                            <li><a class="dropdown-item" href="#">ESE (IES)</a></li>
-                            <li><a class="dropdown-item" href="#">DRDO</a></li>
-                            <li><a class="dropdown-item" href="#">ISRO</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Other Govt. Exams</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Prepration
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Online</a></li>
-                            <li><a class="dropdown-item" href="#">Offline</a></li>
+                    </ul>
+                </li>
 
-                        </ul>
-                    </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Image/11.png" class="d-block w-100" style="height: 450px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Start Preparing Now</h5>
+                <p>For various exams like GATE,ESE,PSU's etc.</p>
+                <button type="button" class="btn btn-danger btnclick">Start Prepration</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/corousel2.jfif" class="d-block w-100" style="height: 450px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Get you dream job</h5>
+                <p>Be strategic and focused toward your aim.</p>
+                <button type="button" class="btn btn-danger btnclick">Search jobs</button>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Image/corousel3.jpg" class="d-block w-100" style="height: 450px;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Get the best books</h5>
+                <p>Prepare with best materials to excel....</p>
+                <button type="button" class="btn btn-danger btnclick">Download Books </button>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- exams -->
+<p class="h1 main-heading">EXAMS</p>
+<div class="row mb-2">
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/1.jpeg"
+                            alt="GATE" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">logo</text> -->
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text"><b class="hdiing">GATE</b> <br> Aptitude Test in Engineering (GATE) is
+                                an examination that primarily tests the comprehensive understanding of various
+                                undergraduate subjects in engineering and science for admission into the
+                                Masters Program and Job in Public Sector Companies.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-danger"
+                                        onclick="myFunction()">Know more</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">Frequency: Annual </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/2.jpg"
+                            alt="GATE" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text"><b class="hdiing">ESE(IES)</b> <br>Engineering Services Examination
+                                commonly known as ESE is conducted annually by UPSC to recruit engineers in four domains
+                                namely CE,ME,EE & E&T for the techno managerial posts. The examination
+                                constitutes a two-stage written examination followed by an interview.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-danger"
+                                        onclick="IES()">Know more</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">Frequency: Annual </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/3.jpg"
+                            alt="GATE" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text"><b class="hdiing">DRDO</b><br>The Defence Research and Development
+                                Organisation is an agency under the Department of Defence Research and Development in
+                                Ministry of Defence of the Government of India, charged with the military's
+                                research and development, headquartered in Delhi, India.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-danger"
+                                        onclick="DRDO()">Know more</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">Frequency: Annual </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/4.png"
+                            alt="GATE" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text"><b class="hdiing">ISRO</b><br>With a total of 32 centers all over
+                                India, every year ISRO entrance exam is conducted for which candidates are invited from
+                                Civil, Electrical, Architecture, Mechanical, Electronics, computer
+                                science and Refrigeration and Air Conditioning streams.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-danger">Know more</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">Frequency: Annual </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/5.png"
+                            alt="GATE" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text"><b class="hdiing">UPPSC AE</b><br>UPPSC stands for Uttar Pradesh Public
+                                Service Commission. This is a government established that aims at providing state-level
+                                government jobs to the youth of Uttar Pradesh. UPPSC AE is a
+                                recruitment examination conducted for the recruitment of eligible and able candidates
+                                for the post of AE.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-danger">Know more</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">Frequency: Annual </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/6.jpg"
+                            alt="GATE" role="img" aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
+                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                        </svg>
+
+                        <div class="card-body">
+                            <p class="card-text"><b class="hdiing">SSC JE</b><br>Staff Selection Commission (SSC)
+                                conducts the SSC JE Exam every year to select eligible candidates for the recruitment of
+                                Junior Engineers (Civil, Electrical, Mechanical, and Quantity Surveying
+                                and Contracts) posts for various Departments/ Organizations in the Government of India.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-lg btn-outline-danger"
+                                        onclick="SSC()">Know more</button>
+                                    <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                </div>
+                                <small class="text-muted">Frequency: Annual <small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="footer foot">
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2 footimg" src="Image/logo footer.jpeg" alt="" width="100" height="100">
+                <small class="d-block mb-3 text-muted">© 2021</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Useful Links</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary footlink" href="gate.html">GATE</a></li>
+                    <li><a class="link-secondary footlink" href="#">ESE</a></li>
+                    <li><a class="link-secondary footlink" href="#">DRDO</a></li>
+                    <li><a class="link-secondary footlink" href="#">ISRO</a></li>
+                    <li><a class="link-secondary footlink" href="#">UPPSC AE</a></li>
+                    <li><a class="link-secondary footlink" href="#">SSC JE</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary footlink" href="#">Books</a></li>
+                    <li><a class="link-secondary footlink" href="#">Syllabus</a></li>
+                    <li><a class="link-secondary footlink" href="#">Coaching</a></li>
+                    <li><a class="link-secondary footlink" href="#">Topper's Talk</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Developers</h5>
+                <ul class="list-unstyled text-small footul">
+                    <li><a class="link-secondary footlink" href="#">Satvik Srivastav</a></li>
+                    <li><a class="link-secondary footlink" href="#">Yuvraj Singh</a></li>
 
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
-    </nav>
-
-    <!-- Carousel -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="Image/11.png" class="d-block w-100" style="height: 450px;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Start Preparing Now</h5>
-                    <p>For various exams like GATE,ESE,PSU's etc.</p>
-                    <button type="button" class="btn btn-danger btnclick">Start Prepration</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Image/corousel2.jfif" class="d-block w-100" style="height: 450px;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Get you dream job</h5>
-                    <p>Be strategic and focused toward your aim.</p>
-                    <button type="button" class="btn btn-danger btnclick">Search jobs</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="Image/corousel3.jpg" class="d-block w-100" style="height: 450px;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Get the best books</h5>
-                    <p>Prepare with best materials to excel....</p>
-                    <button type="button" class="btn btn-danger btnclick">Download Books </button>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- exams -->
-    <p class="h1 main-heading">EXAMS</p>
-    <div class="row mb-2">
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/1.jpeg" alt="GATE" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">logo</text> -->
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text"><b class="hdiing">GATE</b> <br> Aptitude Test in Engineering (GATE) is an examination that primarily tests the comprehensive understanding of various undergraduate subjects in engineering and science for admission into the
-                                    Masters Program and Job in Public Sector Companies.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-lg btn-outline-danger" onclick="myFunction()" >Know more</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">Frequency: Annual </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/2.jpg" alt="GATE" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text"><b class="hdiing">ESE(IES)</b> <br>Engineering Services Examination commonly known as ESE is conducted annually by UPSC to recruit engineers in four domains namely CE,ME,EE & E&T for the techno managerial posts. The examination
-                                    constitutes a two-stage written examination followed by an interview.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-lg btn-outline-danger" onclick="gate.html" >Know more</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">Frequency: Annual </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/3.jpg" alt="GATE" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text"><b class="hdiing">DRDO</b><br>The Defence Research and Development Organisation is an agency under the Department of Defence Research and Development in Ministry of Defence of the Government of India, charged with the military's
-                                    research and development, headquartered in Delhi, India.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-lg btn-outline-danger">Know more</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">Frequency: Annual </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/4.png" alt="GATE" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text"><b class="hdiing">ISRO</b><br>With a total of 32 centers all over India, every year ISRO entrance exam is conducted for which candidates are invited from Civil, Electrical, Architecture, Mechanical, Electronics, computer
-                                    science and Refrigeration and Air Conditioning streams.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-lg btn-outline-danger">Know more</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">Frequency: Annual </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/5.png" alt="GATE" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text"><b class="hdiing">UPPSC AE</b><br>UPPSC stands for Uttar Pradesh Public Service Commission. This is a government established that aims at providing state-level government jobs to the youth of Uttar Pradesh. UPPSC AE is a
-                                    recruitment examination conducted for the recruitment of eligible and able candidates for the post of AE.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-lg btn-outline-danger">Know more</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">Frequency: Annual </small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Image/6.jpg" alt="GATE" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <!-- <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%"
-                                    fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                            </svg>
-
-                            <div class="card-body">
-                                <p class="card-text"><b class="hdiing">SSC JE</b><br>Staff Selection Commission (SSC) conducts the SSC JE Exam every year to select eligible candidates for the recruitment of Junior Engineers (Civil, Electrical, Mechanical, and Quantity Surveying
-                                    and Contracts) posts for various Departments/ Organizations in the Government of India.
-                                </p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-lg btn-outline-danger">Know more</button>
-                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
-                                    </div>
-                                    <small class="text-muted">Frequency: Annual <small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- footer -->
-    <div class="footer foot">
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-            <div class="row">
-                <div class="col-12 col-md">
-                    <img class="mb-2 footimg" src="Image/logo footer.jpeg" alt="" width="100" height="100">
-                    <small class="d-block mb-3 text-muted">© 2021</small>
-                                </div>
-                                <div class="col-6 col-md">
-                                    <h5>Useful Links</h5>
-                                    <ul class="list-unstyled text-small">
-                                        <li><a class="link-secondary footlink" href="gate.html">GATE</a></li>
-                                        <li><a class="link-secondary footlink" href="#">ESE</a></li>
-                                        <li><a class="link-secondary footlink" href="#">DRDO</a></li>
-                                        <li><a class="link-secondary footlink" href="#">ISRO</a></li>
-                                        <li><a class="link-secondary footlink" href="#">UPPSC AE</a></li>
-                                        <li><a class="link-secondary footlink" href="#">SSC JE</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 col-md">
-                                    <h5>Resources</h5>
-                                    <ul class="list-unstyled text-small">
-                                        <li><a class="link-secondary footlink" href="#">Books</a></li>
-                                        <li><a class="link-secondary footlink" href="#">Syllabus</a></li>
-                                        <li><a class="link-secondary footlink" href="#">Coaching</a></li>
-                                        <li><a class="link-secondary footlink" href="#">Topper's Talk</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-6 col-md">
-                                    <h5>Developers</h5>
-                                    <ul class="list-unstyled text-small footul">
-                                        <li><a class="link-secondary footlink" href="#">Satvik Srivastav</a></li>
-                                        <li><a class="link-secondary footlink" href="#">Yuvraj Singh</a></li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            </footer>
-                        </div>
+    </footer>
+</div>
 
 
 
 
-                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
 
 </body>
 

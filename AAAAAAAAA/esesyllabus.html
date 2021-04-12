@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Early-prep : Start Preparing Now!(Get aid for exams like ESE,GATE,PSU's,SSC JE etc.)</title>
+    <link rel="icon" href="Image/favicon-32x32.png" type="image/gif" sizes="32*32">
+    <style>
+        #extra {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            #extra {
+                display: block;
+                /* background-color: turquoise; */
+            }
+        }
+
+        
+
+        .main {
+            background-color: rgb(58, 51, 165);
+            color: white;
+            font-size: 16px;
+        }
+
+        /* tr:nth-child(odd) {
+    background-color: lightblue;
+} */
+
+        /* 
+tr:nth-child(even) {
+    background-color: rgb(133, 108, 105);
+} */
+        tr.new:nth-child(odd):hover {
+            background-color: darkorange;
+            color: whitesmoke;
+            transform: scale(1.009);
+            transition: transform 0.3s ease-in;
+        }
+
+        tr.new:nth-child(even):hover {
+            background-color: rgb(255, 251, 0);
+            color: rgb(3, 3, 0);
+            transform: scale(1.009);
+            transition: transform 0.3s ease-in;
+        }
+
+        .bhkk {
+            background-color: red;
+            font-size: 16px;
+            color: yellow;
+        }
+
+        .new {
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">ExcelMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Exams.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Jobs<span class="badge rounded-pill bg-danger">New</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="books.html">Books</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Exams
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="gate.html">GATE</a></li>
+                            <li><a class="dropdown-item" href="esepage.html">ESE (IES)</a></li>
+                            <li><a class="dropdown-item" href="DRDO.html">DRDO</a></li>
+                            <li><a class="dropdown-item" href="isro.html">ISRO</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="otherexam.html">Other Govt. Exams</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Prepration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Online</a></li>
+                            <li><a class="dropdown-item" href="#">Offline</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Sibebar and main data -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav id="sidebarMenu sidebardisp" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item sidelist">
+                            <a class="nav-link " aria-current="page" href="esepage.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg> What's ESE(IES)?
+                            </a>
+                        </li>
+                        <i class="fas fa-question-circle"></i>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="esesyllabus.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg> Syllabus
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="esemusthbook.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-cart">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg> Must have Books
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="esecutoff.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bar-chart-2">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg> Cutoff
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="esemvsr.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg> Marks v/s Rank
+                            </a>
+                        </li>
+
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="eseprev.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-layers">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg> Previous Year papers
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <br><br>
+                <!-- main data -->
+                <h4><b class="hding">Exam Pattern</b></h4><br><br>
+                <h6><b id="lowerhding">The examination shall be conducted according to the following plan:—</b></h6><br>
+                <ol style="list-style-type:lower-roman;">
+                    <li><strong>Stage-I:</strong> Engineering Services (Preliminary/Stage-I) Examination (Objective Type
+                        Papers) for the selection of candidates for the Stage-II: Engineering Services (Main/Stage-II)
+                        Examination;</li>
+                    <li><strong>Stage-II:</strong> Engineering Services (Main/Stage-II) Examination (Conventional Type
+                        Papers) and</li>
+                    <li><strong>Stage-III:</strong> Personality Test</li>
+                </ol>
+                <h4><b id="lowerhding">Stage-I(Preliminary/Stage-I) Examination :-</b></h4><br>
+                <ul>
+                    <li>The Engineering Services (Preliminary/Stage-I) Examination will consist of two objective type
+                        (multiple choices) questions papers and carrying a maximum of 500 marks (Paper 1 – 200 Marks &
+                        Paper II – 300 Marks)</li>
+                    <li>IES&#xA0;Prelims exam will be&#xA0;conducted in offline mode i.e. it is a pen and paper-based
+                        test.</li>
+                    <li>Candidates are provided&#xA0;OMR sheets for both the papers, wherein the correct answer needs to
+                        be colored.&#xA0;</li>
+                    <li>For each wrong answer, one-third mark&#xA0;is deducted.</li>
+                    <li>If a candidate gives more than one answer, it will be treated as a wrong answer even if one of
+                        the given answers happen to be correct and there will be same penalty as above for that
+                        question.</li>
+                </ul><br>
+                <table class="table table-dark table-striped">
+                    <TR>
+                        <TH>Papers</TH>
+                        <th>Number Of Question</th>
+                        <th>Duration Of Exam</th>
+                        <th>Maxmium Marks</th>
+                    </TR>
+                    <tr>
+                        <td>Paper 1 (General Studies &amp; Engineering Aptitude)</td>
+                        <td>100</td>
+                        <td>2 hours</td>
+                        <td>200</td>
+
+                    </tr>
+                    <tr>
+                        <td>Paper 2 (Engineering Discipline)</td>
+                        <td>150</td>
+                        <td>3 hours</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>250 Questions</td>
+                        <td>5 hours</td>
+                        <td>600 marks</td>
+                    </tr>
+                </table><br>
+                <h4><b id="lowerhding">Stage-II(Main/Stage-II) Examination:-</b></h4><br>
+                <ul>
+                    <li>The Engineering Services (Main/stage-II) Examination will consist two conventional type papers in Engineering Discipline specific with duration of three hours and maximum marks of 600 (300 Marks in each paper).</li>
+                    <li>IES Stage 2 will have two papers. Both the papers will have questions from the opted&#xA0;Engineering discipline (Civil Engineering/ Mechanical Engineering/ Electrical/ Electronics &amp; Telecommunication Engineering).</li>
+                    <li>There will be 8 questions as an option, out of which you will have to attempt 5 questions.</li>
+                    <li>There will be no negative marking in this exam.</li>
+                    <li>Candidates have to answer in English language only.</li>
+                    <li>Up to 5% marks may be deducted in case of illegible handwriting.</li>
+                    <li>Credit will be given for exact, to the point answer using an economy of words.</li>
+                </ul>
+                <table class="table table-dark table-striped">
+                    <tr>
+                        <th>IES Main Papers</th>
+                        <th>Number of Questions</th>
+                        <th>Duration of Exam</th>
+                        <th>Maximum Marks</th>
+                    </tr>
+                    <tr>
+                        <td>Paper 1 (Engineering Discipline)</td>
+                        <td>5 out of 8 Optional Questions</td>
+                        <td>3 hours</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Paper 2 (Engineering Discipline)</td>
+                        <td>5 out of 8 Optional Questions</td>
+                        <td>3 hours</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>10 Questions</td>
+                        <td>6 hours</td>
+                        <td>600 marks</td>
+                    </tr>
+                </table><br><br>
+                <h4><b id="lowerhding">Stage-II(Main/Stage-II) Examination:-</b></h4><br>
+                <ul>
+                    <li>This stage is also known as Personality Test.</li>
+                    <li>It is the final stage in IES recruitment exam.</li>
+                    <li>Only candidates qualifying the written exams are called for the interview round.</li>
+                    <li>The candidates are scored out of 200 marks.</li>
+                    <li>In IES Interview round, the following skills of the candidates areassessed:
+                    <ul>
+                        <li>Suitability of candidate for a career in the public service sector</li>
+                        <li>Mental caliber or Mental alertness</li>
+                        <li>Leadership Qualities</li>
+                        <li>Initiative &amp; Intellectual Curiosity,</li>
+                        <li>Mental &amp; Physical energy and</li>
+                        <li>Other social traits and interestsin current affairs.</li>
+                    </ul>
+                    </li>
+                </ul><br><br><br><br>
+                <h4><b class="hding">SYLLABUS</b></h4><br><br>
+                <h5 class="green">Syllabus for Mechanical Engineering : -</h5><br><br>
+                <iframe src="PDF/IESSYLLABUS.pdf" class="col-sm-12" width="100%" height="500px">
+                </iframe>
+            </main>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer foot">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2 footimg" src="Image/logo footer.jpeg" alt="" width="100" height="100">
+                    <small class="d-block mb-3 text-muted">© 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary footlink" href="#">GATE</a></li>
+                        <li><a class="link-secondary footlink" href="#">ESE</a></li>
+                        <li><a class="link-secondary footlink" href="#">DRDO</a></li>
+                        <li><a class="link-secondary footlink" href="#">ISRO</a></li>
+                        <li><a class="link-secondary footlink" href="#">UPPSC AE</a></li>
+                        <li><a class="link-secondary footlink" href="#">SSC JE</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary footlink" href="#">Books</a></li>
+                        <li><a class="link-secondary footlink" href="#">Syllabus</a></li>
+                        <li><a class="link-secondary footlink" href="#">Coaching</a></li>
+                        <li><a class="link-secondary footlink" href="#">Topper's Talk</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Developers</h5>
+                    <ul class="list-unstyled text-small footul">
+                        <li><a class="link-secondary footlink" href="#">Satvik Srivastav</a></li>
+                        <li><a class="link-secondary footlink" href="#">Yuvraj Singh</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>Early-prep : Start Preparing Now!(Get aid for exams like ESE,GATE,PSU's,SSC JE etc.)</title>
+    <link rel="icon" href="Image/favicon-32x32.png" type="image/gif" sizes="32*32">
+    <style>
+         /* table {
+            border: 0;
+            border-spacing: 0;
+            font-size: .857em;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 50px;
+            } */
+            
+            
+
+        #extra {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            #extra {
+                display: block;
+                /* background-color: turquoise; */
+            }
+        }
+
+        table,
+        td,
+        th {
+            padding: 2px;
+            border: 1px solid lightgray;
+            border-collapse: collapse;
+            text-align: center;
+            
+        }
+
+        td {
+            font-size: 12px;
+        }
+
+        .main {
+            background-color: rgb(58, 51, 165);
+            color: white;
+            font-size: 16px;
+        }
+
+        /* tr:nth-child(odd) {
+    background-color: lightblue;
+} */
+
+        /* 
+tr:nth-child(even) {
+    background-color: rgb(133, 108, 105);
+} */
+        tr.new:nth-child(odd):hover {
+            background-color: darkorange;
+            color: whitesmoke;
+            transform: scale(1.009);
+            transition: transform 0.3s ease-in;
+        }
+
+        tr.new:nth-child(even):hover {
+            background-color: rgb(255, 251, 0);
+            color: rgb(3, 3, 0);
+            transform: scale(1.009);
+            transition: transform 0.3s ease-in;
+        }
+
+        .bhkk {
+            background-color: red;
+            font-size: 16px;
+            color: yellow;
+        }
+
+        .new {
+            background-color: lightblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ExcelMe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Exams.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jobs<span class="badge rounded-pill bg-danger">New</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Books</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Exams
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="gate.html">GATE</a></li>
+                            <li><a class="dropdown-item" href="esepage.html">ESE (IES)</a></li>
+                            <li><a class="dropdown-item" href="uppscpage.html">UPPSC AE</a></li>
+                            <li><a class="dropdown-item" href="catepage.html">CAT</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Other Govt. Exams</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Prepration
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Online</a></li>
+                            <li><a class="dropdown-item" href="#">Offline</a></li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Sibebar and main data -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav id="sidebarMenu sidebardisp" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item sidelist">
+                            <a class="nav-link " aria-current="page" href="catepage.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-home">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg> What's CAT?
+                            </a>
+                        </li>
+                        <i class="fas fa-question-circle"></i>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="catsyllabus.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-file">
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                                    <polyline points="13 2 13 9 20 9"></polyline>
+                                </svg> Syllabus
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="catmusthbook.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-shopping-cart">
+                                    <circle cx="9" cy="21" r="1"></circle>
+                                    <circle cx="20" cy="21" r="1"></circle>
+                                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                                </svg> Must have Books
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="catcutoff.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-bar-chart-2">
+                                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                                </svg> Cutoff
+                            </a>
+                        </li>
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="catmvsr.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg> Marks v/s Rank
+                            </a>
+                        </li>
+
+                        <li class="nav-item sidelist">
+                            <a class="nav-link" href="catprev.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-layers">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg> Previous Year papers
+                            </a>
+                        </li>
+                    </ul>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class=""></div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class=""></div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">CAT</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group me-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                        </div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-calendar">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            This week
+                        </button>
+                    </div>
+                </div>
+                <!-- main data -->
+
+                <h4><b class="hding">What's CAT Exam ?</b></h4><br>
+                <strong><b style="color: rgb(228, 0, 141);">Common Admission Test </b>, mostly referred to as <b style="color: rgb(228, 0, 141);">CAT</b> is one of the most popular and sought-after MBA entrance examinations conducted across the country. The exam is usually conducted by one of the 20 Indian Institutes of Management (IIMs) as a prerequisite for admission to the postgraduate and fellow programs in management offered by the premier institutes. There are more than 100 institutes that offer admission based on marks obtained by the candidates in CAT Exam.Admission to MBA/PGDM programmes in 20 Indian Institutes of Management (IIMs) and other top MBA colleges like FMS
+                    Delhi, MDI Gurgaon, SPJIMR Mumbai, IMI New Delhi, IMT Ghaziabad and hundreds of other top MBA
+                    colleges in India. More than two lakh candidates appear in CAT every year and more than 5000 seats are offered by the 20 IIMs currently functioning in India.This number is rising
+                    consistently, to explore admission opportunity in MBA programmes offered by IIMs and other top
+                    B-schools.Apart from being the most important entrance test for the 2 years full time post graduate
+                    management program (MBA/PGDM), <b style="color: rgb(228, 0, 141);">CAT 2021 is the gateway for one
+                        year MBA programmes in IIMs and other prominent management institutes.</b>
+                    <br><br><br>
+                    Last year CAT was conducted in a different structure, with a reduced number of 76 questions, reduced time limit of two hours and three testing sessions instead of two, due to Covid-19 pandemic. This year it is expected that CAT entrance exam will have three hours duration, with 100 questions and will be conducted in two sessions as was conducted before last<br><br><br>
+                        IIMs will offer admission 2022 on the basis of CAT 2021 only and will not accept any
+                    other test score. There are more than 150 cities and more than 400 venues where CAT 2021 will be
+                    conducted in India.CAT exam is held in the last week of November and CAT result is announced in the
+                    first week of January and IIM shortlisting begins soon after.<br><br>
+                    <b class="inffo">Conducting body
+                        :
+                    </b>IIM Indore conducted CAT 2020 on November 29 at 430 exam centres in 156 cities across India.One of the six older IIMs will conduct CAT Exam 2021 on the basis of rotation. This year, IIM Ahmedabad is expected to conduct the CAT exam in 2021 after a gap of five years. IIM Ahmedabad conducted the last CAT exam in 2015.<br><br>
+                    <br><br>
+                    <p class="bluee">The following candidates are eligible to appear in GATE 2021 examination :</p>
+                    <br>
+                    <strong>>The minimum eligibility criteria forCAT exam is graduation. Read below for more details on CAT eligibility criteria.</strong><br><br>
+                    <ul> 
+                     <li style="font-size: 16px;"> The candidate must possess a bachelor's degree with minimum 50 per cent aggregate or equivalent CGPA (45 per cent aggregate for SC, ST and PWD/DA category) from a recognised board or university  </li> 
+                     <li style="font-size: 16px;">The candidate must have completed a professional degree (CA/ CS/ ICWA) with required percentag</li> 
+                     <li style="font-size: 16px;" > Candidates appearing for the final year of bachelor's degree/equivalent qualification or awaiting result are also eligible to apply for CAT exam</li> 
+                    </ul> 
+                    <img class="img-fluid" alt="Responsive image" alt="CAT Eligibility" class="img-responsive" src="https://www.collegesearch.in/upload/exam/document/170901122155_CAT3.jpg" style="font-size: 12px; width: 640px; margin: 0px auto;" data-pagespeed-url-hash="810950682" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <br><br>
+                    <br><br><b class="inffo">Age Limit : </b> No Age limit <br><br>
+                    <b class="inffo">Minimum marks required to appear : </b>The candidate must possess a bachelor's degree with minimum 50 per cent aggregate or equivalent CGPA (45 per cent aggregate for SC, ST and PWD/DA category) from a recognised board or university <br><br>
+                    <b class="inffo">A brief description of the eligibility criteria is given below: </b>
+                    <br><br>
+                    <table class="table table-striped" border="1" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr class="table-danger">
+                                <td colspan="4" style="width:623px;">
+                                    <p align="center">
+                                        <strong>Qualifications</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        <strong>Academic</strong></p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        <strong>Degree</strong></p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        <strong>Final Year Students</strong></p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        <strong>Work Experience</strong></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Bachelor's Degree</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Bachelor's degree in Engineering or Technology</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Candidates will be admitted only if they graduate securing at least 50% marks</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Firstly, it is not mandatory to hold work experience</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        50% marks in aggregate for General Category</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Degree equivalent to bachelor's degree in Engineering &amp; Technology of Professional Societies</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Must show an original certificate in case of qualifying the examination</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        It contributes to some weightage by the IIMs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        45% marks in aggregate for Reserved Categories</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Bachelor's degree recognized by Association of Indian Universities</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Must submit the photocopy of original certificates when asked</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        It does not contribute to selection until the final stage of selection</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        &nbsp;</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        Any qualification not mentioned here are also eligible to apply</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        &nbsp;</p>
+                                </td>
+                                <td style="width:156px;">
+                                    <p align="center">
+                                        &nbsp;</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                    <br><br><br> -->
+                    <div class="faq">
+                        <p class="faq">Frequently asked Questions - </p>
+                    </div><br><br>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Q: I am pursuing B.Sc. Am I eligible to appear in GATE 2021?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Ans: From 2021 session onwards, the authorities have
+                                    introduced various changes in GATE 2021. According to which, 3 year graduation is
+                                    also valid.
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Q: I belong to OBC category and therefore want to upload my category certificate
+                                        but I can't find any option to upload the certificate. What to do?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Ans: It is because category certificate for the OBC
+                                        candidates is not needed while applying for GATE 2021. The category certificate
+                                        is used for the purpose of ascertaining the concession offered in the
+                                        application fee. The OBC certificate would be needed while taking admission
+                                        using GATE scores.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Q : Can I give Gate in 3<sup>rd</sup> year of B.tech?
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Ans : Yes you can but most students take it as practice
+                                        as the whole syllabus of GATE is covered in 4<sup>th</sup> year of B.tech.F
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+            </main>
+        </div>
+    </div>
+    <div class="extra" id="extra">
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                    <div class=""></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                    <div class=""></div>
+                </div>
+            </div>
+            <br><br>
+            <!-- main data  -->
+            <h4><b class="hding">Exam Pattern</b></h4><br><br>
+            <h6><b id="lowerhding">The examination shall be conducted according to the following plan:—</b></h6><br>
+            <ol style="list-style-type:lower-roman;">
+                <li><strong>Stage-I:</strong> Engineering Services (Preliminary/Stage-I) Examination (Objective Type
+                    Papers) for the selection of candidates for the Stage-II: Engineering Services (Main/Stage-II)
+                    Examination;</li>
+                <li><strong>Stage-II:</strong> Engineering Services (Main/Stage-II) Examination (Conventional Type
+                    Papers) and</li>
+                <li><strong>Stage-III:</strong> Personality Test</li>
+            </ol>
+            <h4><b id="lowerhding">Stage-I(Preliminary/Stage-I) Examination :-</b></h4><br>
+            <ul>
+                <li>The Engineering Services (Preliminary/Stage-I) Examination will consist of two objective type
+                    (multiple choices) questions papers and carrying a maximum of 500 marks (Paper 1 – 200 Marks &
+                    Paper II – 300 Marks)</li>
+                <li>IES&#xA0;Prelims exam will be&#xA0;conducted in offline mode i.e. it is a pen and paper-based
+                    test.</li>
+                <li>Candidates are provided&#xA0;OMR sheets for both the papers, wherein the correct answer needs to
+                    be colored.&#xA0;</li>
+                <li>For each wrong answer, one-third mark&#xA0;is deducted.</li>
+                <li>If a candidate gives more than one answer, it will be treated as a wrong answer even if one of
+                    the given answers happen to be correct and there will be same penalty as above for that
+                    question.</li>
+            </ul><br>
+            <table class="table table-dark table-striped">
+                <TR>
+                    <TH>Papers</TH>
+                    <th>Number Of Question</th>
+                    <th>Duration Of Exam</th>
+                    <th>Maxmium Marks</th>
+                </TR>
+                <tr>
+                    <td>Paper 1 (General Studies &amp; Engineering Aptitude)</td>
+                    <td>100</td>
+                    <td>2 hours</td>
+                    <td>200</td>
+
+                </tr>
+                <tr>
+                    <td>Paper 2 (Engineering Discipline)</td>
+                    <td>150</td>
+                    <td>3 hours</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>250 Questions</td>
+                    <td>5 hours</td>
+                    <td>600 marks</td>
+                </tr>
+            </table><br>
+            <h4><b id="lowerhding">Stage-II(Main/Stage-II) Examination:-</b></h4><br>
+            <ul>
+                <li>The Engineering Services (Main/stage-II) Examination will consist two conventional type papers in
+                    Engineering Discipline specific with duration of three hours and maximum marks of 600 (300 Marks in
+                    each paper).</li>
+                <li>IES Stage 2 will have two papers. Both the papers will have questions from the
+                    opted&#xA0;Engineering discipline (Civil Engineering/ Mechanical Engineering/ Electrical/
+                    Electronics &amp; Telecommunication Engineering).</li>
+                <li>There will be 8 questions as an option, out of which you will have to attempt 5 questions.</li>
+                <li>There will be no negative marking in this exam.</li>
+                <li>Candidates have to answer in English language only.</li>
+                <li>Up to 5% marks may be deducted in case of illegible handwriting.</li>
+                <li>Credit will be given for exact, to the point answer using an economy of words.</li>
+            </ul>
+            <table class="table table-dark table-striped">
+                <tr>
+                    <th>IES Main Papers</th>
+                    <th>Number of Questions</th>
+                    <th>Duration of Exam</th>
+                    <th>Maximum Marks</th>
+                </tr>
+                <tr>
+                    <td>Paper 1 (Engineering Discipline)</td>
+                    <td>5 out of 8 Optional Questions</td>
+                    <td>3 hours</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Paper 2 (Engineering Discipline)</td>
+                    <td>5 out of 8 Optional Questions</td>
+                    <td>3 hours</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>10 Questions</td>
+                    <td>6 hours</td>
+                    <td>600 marks</td>
+                </tr>
+            </table><br><br>
+            <h4><b id="lowerhding">Stage-II(Main/Stage-II) Examination:-</b></h4><br>
+            <ul>
+                <li>This stage is also known as Personality Test.</li>
+                <li>It is the final stage in IES recruitment exam.</li>
+                <li>Only candidates qualifying the written exams are called for the interview round.</li>
+                <li>The candidates are scored out of 200 marks.</li>
+                <li>In IES Interview round, the following skills of the candidates areassessed:
+                    <ul>
+                        <li>Suitability of candidate for a career in the public service sector</li>
+                        <li>Mental caliber or Mental alertness</li>
+                        <li>Leadership Qualities</li>
+                        <li>Initiative &amp; Intellectual Curiosity,</li>
+                        <li>Mental &amp; Physical energy and</li>
+                        <li>Other social traits and interestsin current affairs.</li>
+                    </ul>
+                </li>
+            </ul><br><br><br><br>
+            <h4><b class="hding">SYLLABUS</b></h4><br><br>
+            <h5 class="green">Syllabus for Mechanical Engineering : -</h5><br><br>
+            <iframe src="PDF/IESSYLLABUS.pdf" class="col-sm-12" width="100%" height="500px">
+            </iframe><br><br><br>
+            <!-- must have books -->
+            <h4><b class="hding">Importatnt Books</b></h4><br>
+            <table class="table table-hover border-top">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Subject</th>
+                    <th>Books</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Subject</td>
+                    <td>Books</td>
+                </tr>
+            </table>
+            <br><br>
+            <!-- Yearwise ESE Mechanical Engineering Cutoff -->
+            <h4><b class="hding">Yearwise GATE Mechanical Engineering Cutoff</b></h4><br>
+            <table class="table" id="cutoff">
+                <tr class="main">
+                    <th rowspan="2">YEAR</th>
+                    <th colspan="3">Cut-Off</th>
+                </tr>
+                <tr class="bhkk">
+                    <th>Qualifying Marks (UR)</th>
+                    <th>Qualifying Marks(OBC-NCL)</th>
+                    <th>Qualifying Marks(SC / ST / PWD)</th>
+                </tr>
+                <tr class="new">
+                    <td>2021</td>
+                    <td>33</td>
+                    <td>29.07</td>
+                    <td>22.00</td>
+                </tr>
+                <tr class="new">
+                    <td>2020</td>
+                    <td>34.0</td>
+                    <td>30.6</td>
+                    <td>22.6</td>
+                </tr>
+                <tr class="new">
+                    <td>2019</td>
+                    <td>34.10</td>
+                    <td>30.70</td>
+                    <td>22.70</td>
+                </tr>
+                <tr class="new">
+                    <td>2018</td>
+                    <td>34.70</td>
+                    <td>31.20</td>
+                    <td>23.1</td>
+                </tr>
+                <tr class="new">
+                    <td>2017</td>
+                    <td>32.87</td>
+                    <td>29</td>
+                    <td>21</td>
+                </tr>
+                <tr class="new">
+                    <td>2016</td>
+                    <td>32.73</td>
+                    <td>29.46</td>
+                    <td>21.82</td>
+                </tr>
+                <tr class="new">
+                    <td>2015</td>
+                    <td>25.00</td>
+                    <td>22.50</td>
+                    <td>16.67</td>
+                </tr>
+                <tr class="new">
+                    <td>2014</td>
+                    <td>28.86</td>
+                    <td>25.97</td>
+                    <td>19.24</td>
+                </tr>
+                <tr class="new">
+                    <td>2013</td>
+                    <td>25.00</td>
+                    <td>22.50</td>
+                    <td>16.17</td>
+                </tr>
+                <tr class="new">
+                    <td>2012</td>
+                    <td>27.14</td>
+                    <td>24.47</td>
+                    <td>18.09</td>
+                </tr>
+            </table><br><br>
+            <!-- ESE 2020 Marks v/s Rank -->
+            <h4><b class="hding">ESE(IES) 2020 Marks v/s Rank</b></h4><br><br>
+            <table class="table table-dark table-striped mvr" border="1">
+                <tbody>
+                    <tr>
+                        <th style="width:200px;">
+                            <p align="center"><strong>Marks</strong></p>
+                        </th>
+                        <th style="width:200px;">
+                            <p align="center"><strong>Rank</strong></p>
+                        </th>
+                        <th style="width:200px;">
+                            <p align="center"><strong>Score (out of 1000)</strong></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">86.88</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">1</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">987</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">83.74</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">6</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">949</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">81.93</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">25</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">927</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">81.65</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">29</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">924</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">80.60</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">39</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">911</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">80.25</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">43</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">907</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">79.55</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">56</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">899</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">78.97</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">64</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">692</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">78.50</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">76</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">836</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">78.31</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">83</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">884</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">78.16</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">92</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">882</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">77.98</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">100</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">830</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">77.81</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">104</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">878</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">77.46</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">119</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">874</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">77.32</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">127</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">872</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">77.06</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">191</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">857</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">75.71</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">217</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">853</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">75.68</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">233</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">853</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">75.36</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">250</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">848</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">74.03</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">347</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">832</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">73.97</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">362</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">831</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">73.62</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">400</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">827</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">73.27</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">435</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">823</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">72.06</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">565</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">808</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">71.87</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">588</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">806</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">71.52</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">635</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">802</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">70.68</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">866</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">785</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">68.43</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">1148</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">765</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">68.11</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">1201</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">761</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">67.88</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">1302</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">756</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">64.48</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">2011</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">721</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">64.16</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">2184</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">713</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">63.50</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">2314</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">705</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">62.10</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">2784</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">688</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">61.75</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">2901</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">684</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">60.86</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">3219</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">674</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">60.35</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">3381</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">667</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">55.12</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">5803</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">604</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">54.27</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">6127</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">596</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">53.29</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">6760</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">582</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">50.23</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">8501</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">546</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">46.38</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">11,086</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">499</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">
+                            <p align="center">45.06</p>
+                        </td>
+                        <td style="width:200px;">
+                            <p align="center">11,886</p>
+                        </td>
+                        <td>
+                            <p align="center">483</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="center">40.12</p>
+                        </td>
+                        <td>
+                            <p align="center">15794</p>
+                        </td>
+                        <td>
+                            <p align="center">483</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p align="center">33.21</p>
+                        </td>
+                        <td>
+                            <p align="center">22,603</p>
+                        </td>
+                        <td>
+                            <p align="center">340</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br>
+            <!-- ESE Yearwise Question Paper -->
+            <h4><b class="hding">ESE(IES) Yearwise Question Paper</b></h4><br><br>
+            <table class="table table-hover">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Year</th>
+                    <th>Paper</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>2021</td>
+                    <td> <a href="PDF/SYLLABUS ME.pdf">2021 Paper</a> </td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>2020</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>2019</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>2018</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>2017</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>2016</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>2015</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>2014</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>2013</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>2012</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>2011</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>2010</td>
+                    <td></td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer foot">
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2 footimg" src="Image/logo footer.jpeg" alt="" width="100" height="100">
+                    <small class="d-block mb-3 text-muted">© 2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Useful Links</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary footlink" href="#">GATE</a></li>
+                        <li><a class="link-secondary footlink" href="#">ESE</a></li>
+                        <li><a class="link-secondary footlink" href="#">DRDO</a></li>
+                        <li><a class="link-secondary footlink" href="#">ISRO</a></li>
+                        <li><a class="link-secondary footlink" href="#">UPPSC AE</a></li>
+                        <li><a class="link-secondary footlink" href="#">SSC JE</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary footlink" href="#">Books</a></li>
+                        <li><a class="link-secondary footlink" href="#">Syllabus</a></li>
+                        <li><a class="link-secondary footlink" href="#">Coaching</a></li>
+                        <li><a class="link-secondary footlink" href="#">Topper's Talk</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Developers</h5>
+                    <ul class="list-unstyled text-small footul">
+                        <li><a class="link-secondary footlink" href="#">Satvik Srivastav</a></li>
+                        <li><a class="link-secondary footlink" href="#">Yuvraj Singh</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
